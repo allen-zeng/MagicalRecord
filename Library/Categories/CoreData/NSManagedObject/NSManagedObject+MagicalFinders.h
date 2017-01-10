@@ -34,22 +34,22 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray *)MR_findAllWithPredicate:(NSPredicate *__nullable)searchTerm;
 + (NSArray *)MR_findAllWithPredicate:(NSPredicate *__nullable)searchTerm inContext:(NSManagedObjectContext *)context;
 
-+ (instancetype)MR_findFirst;
-+ (instancetype)MR_findFirstInContext:(NSManagedObjectContext *)context;
-+ (instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm;
-+ (instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context;
-+ (instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchterm sortedBy:(NSString *)property ascending:(BOOL)ascending;
-+ (instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchterm sortedBy:(NSString *)property ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context;
-+ (instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm andRetrieveAttributes:(NSArray *)attributes;
-+ (instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm andRetrieveAttributes:(NSArray *)attributes inContext:(NSManagedObjectContext *)context;
-+ (instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortBy ascending:(BOOL)ascending andRetrieveAttributes:(id)attributes, ...;
-+ (instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortBy ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context andRetrieveAttributes:(id)attributes, ...;
-+ (instancetype)MR_findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue;
-+ (instancetype)MR_findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue inContext:(NSManagedObjectContext *)context;
-+ (instancetype)MR_findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue orderedBy:(NSString *)orderedBy ascending:(BOOL)ascending;
-+ (instancetype)MR_findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue orderedBy:(NSString *)orderedBy ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context;
-+ (instancetype)MR_findFirstOrderedByAttribute:(NSString *)attribute ascending:(BOOL)ascending;
-+ (instancetype)MR_findFirstOrderedByAttribute:(NSString *)attribute ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context;
++ (nullable instancetype)MR_findFirst;
++ (nullable instancetype)MR_findFirstInContext:(NSManagedObjectContext *)context;
++ (nullable instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm;
++ (nullable instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context;
++ (nullable instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchterm sortedBy:(NSString *)property ascending:(BOOL)ascending;
++ (nullable instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchterm sortedBy:(NSString *)property ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context;
++ (nullable instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm andRetrieveAttributes:(NSArray *)attributes;
++ (nullable instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm andRetrieveAttributes:(NSArray *)attributes inContext:(NSManagedObjectContext *)context;
++ (nullable instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortBy ascending:(BOOL)ascending andRetrieveAttributes:(id)attributes, ...;
++ (nullable instancetype)MR_findFirstWithPredicate:(NSPredicate *)searchTerm sortedBy:(NSString *)sortBy ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context andRetrieveAttributes:(id)attributes, ...;
++ (nullable instancetype)MR_findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue;
++ (nullable instancetype)MR_findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue inContext:(NSManagedObjectContext *)context;
++ (nullable instancetype)MR_findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue orderedBy:(NSString *)orderedBy ascending:(BOOL)ascending;
++ (nullable instancetype)MR_findFirstByAttribute:(NSString *)attribute withValue:(id)searchValue orderedBy:(NSString *)orderedBy ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context;
++ (nullable instancetype)MR_findFirstOrderedByAttribute:(NSString *)attribute ascending:(BOOL)ascending;
++ (nullable instancetype)MR_findFirstOrderedByAttribute:(NSString *)attribute ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context;
 
 + (instancetype)MR_findFirstOrCreateByAttribute:(NSString *)attribute withValue:(id)searchValue;
 + (instancetype)MR_findFirstOrCreateByAttribute:(NSString *)attribute withValue:(id)searchValue inContext:(NSManagedObjectContext *)context;
