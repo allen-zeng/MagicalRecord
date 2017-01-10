@@ -67,9 +67,9 @@ UIColor *MRColorFromString(NSString *serializedColor)
         return nil;
     }
 
-    UIColor *color = [UIColor colorWithRed:(componentValues[ 0 ] / 255.0f)
-                                     green:(componentValues[ 1 ] / 255.0f)
-                                      blue:(componentValues[ 2 ] / 255.0f)
+    UIColor *color = [UIColor colorWithRed:(CGFloat)(componentValues[ 0 ] / 255.0f)
+                                     green:(CGFloat)(componentValues[ 1 ] / 255.0f)
+                                      blue:(CGFloat)(componentValues[ 2 ] / 255.0f)
                                      alpha:componentValues[ 3 ]];
 
     free(componentValues);
